@@ -1,16 +1,16 @@
 import ipaddress
 
-def check_ip_type(ip):
+def ipteszt(ip):
     try:
         ipcim = ipaddress.ip_address(ip)
         
         if ipcim.version == 4:
-            return "IPv4"
+            return "Az ip cím IPv4 típusú."
         elif ipcim.version == 6:
-            return "IPv6"
+            return "Az ip cím IPv6 típusú."
     except ValueError:
         return "Helytelen IP cím"
 
-ip_input = input("Adjon meg egy ip címet: ")
+ipcim_input = input("Adjon meg egy ip címet: ")
 
-print(check_ip_type(ip_input))
+print(ipteszt(ipcim_input))
