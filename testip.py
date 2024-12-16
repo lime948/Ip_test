@@ -14,3 +14,4 @@ def ipteszt(ip):
 ipcim_input = input("Adjon meg egy ip címet: ")
 
 print(ipteszt(ipcim_input))
+#Készítette: Oreskó Zétény
